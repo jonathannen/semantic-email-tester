@@ -1,0 +1,8 @@
+{
+  "name": "semantic-email-tester",
+  "description": "Generates a Google Apps Script to test semantic emails",
+  "scripts": {
+    "generate": "node index.js > code.gs"
+  },
+  "license": "MIT"
+}
