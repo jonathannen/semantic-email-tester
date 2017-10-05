@@ -8,7 +8,9 @@ Amazing stuff. But. It's surprisingly hard to test for yourself. Firstly, you ne
 
 There is an option of sending emails to yourself to bypass this. However, I found sending via GMail SMTP wasn't enough. For some reason this doesn't include valid DKIM and SPF, surprisingly. The next option was to authenticate via the API, but that was a bunch of plumbing I didn't want to do (and would be a pain for others to replicate).
 
-So my last resort was to generate all the combinations I needed and then turn into a Google Apps Script. You can take code.gs directly and head on over to https://script.google.com to run. Hit run and it'll send a series of emails 
+So my last resort was to generate all the combinations I needed and then turn into a Google Apps Script. Right now it's shared as a Google Apps Scripts "Web App". Take a look at [Semantic Email Tester](https://script.google.com/macros/s/AKfycbyLdVMYfJ_2Bg2qYmiOjx4MMQaJYn1Fn-97jjpZ8rpjqmRYRom9/exec).
+
+The only snag with is it gives my script permissions to run as you. Specifically send emails as you. If you'd rather run yourself it's easy. Take code.gs directly and head on over to https://script.google.com. Paste it in and run the sendSemanticEmailTests function.
 
 # Instructions
 
